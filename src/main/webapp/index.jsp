@@ -1,17 +1,20 @@
-<%-- 
-    Document   : index
-    Created on : 18-10-2022, 15:20:37
-    Author     : yorsh
---%>
-
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
+    <!DOCTYPE html>
+    <%@ page isELIgnored="false" %>
+    <html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+    <title>Create User</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <div style="padding-left:50px;font-family:monospace;">
+                CRUD Operations</br></br>
+            <a href="${pageContext.request.contextPath}/post.jsp"><div
+                                    style="color:saffron">POST</div></a></br></br>
+            <a href="${pageContext.request.contextPath}/resources/huh.evaluaciontres.campeoneshabilidades"><div
+                                    style="color:saffron">GET</div></a></br></br>
+            <a href="${pageContext.request.contextPath}/update.jsp"><div
+                                    style="color:saffron">Update User</div></a></br></br>
+            <a href="${pageContext.request.contextPath}/delete.jsp"><div
+                                    style="color:saffron">Delete User</div></a></br></br>
+        </div>
     </body>
-</html>
+    </html>

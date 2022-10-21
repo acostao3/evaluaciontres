@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE resources PUBLIC "-//GlassFish.org//DTD GlassFish Application Server 3.1 Resource Definitions//EN" "http://glassfish.org/dtds/glassfish-resources_1_5.dtd">
 <resources>
+  <jdbc-resource enabled="true" jndi-name="jdbc/myDatasource" object-type="user" pool-name="connectionPool">
+    <description/>
+  </jdbc-resource>
   <jdbc-connection-pool allow-non-component-callers="false" associate-with-thread="false" connection-creation-retry-attempts="0" connection-creation-retry-interval-in-seconds="10" connection-leak-reclaim="false" connection-leak-timeout-in-seconds="0" connection-validation-method="auto-commit" datasource-classname="org.postgresql.ds.PGSimpleDataSource" fail-all-connections="false" idle-timeout-in-seconds="300" is-connection-validation-required="false" is-isolation-level-guaranteed="true" lazy-connection-association="false" lazy-connection-enlistment="false" match-connections="false" max-connection-usage-count="0" max-pool-size="32" max-wait-time-in-millis="60000" name="connectionPool" non-transactional-connections="false" pool-resize-quantity="2" res-type="javax.sql.ConnectionPoolDataSource" statement-timeout-in-seconds="-1" steady-pool-size="8" validate-atmost-once-period-in-seconds="0" wrap-jdbc-objects="false">
-    <property name="URL" value="jdbc:postgresql://ec2-35-170-146-54.compute-1.amazonaws.com:5432/d8ffa70d17ofsv"/>
-    <property name="User" value="eqomeohztjnyso"/>
-    <property name="Password" value="3f196fca46ffd8636b9be045b614f058b1856377705edc958f3ac4d7437a9469"/>
+    <property name="user" value="eqomeohztjnyso"/>
+    <property name="password" value="3f196fca46ffd8636b9be045b614f058b1856377705edc958f3ac4d7437a9469"/>
+    <property name="databaseName" value="d8ffa70d17ofsv"/>
+    <property name="host" value="ec2-35-170-146-54.compute-1.amazonaws.com"/>
+    <property name="port" value="5432"/>
   </jdbc-connection-pool>
 </resources>
